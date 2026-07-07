@@ -45,16 +45,26 @@ function callbackfn(element,idx,arr){
  */
 
 
-Array.prototype.myFilter =function(callback){
-  const newArry =[];
-  for(let i =0;i<this.length;i++){
+// Array.prototype.myFilter =function(callback){
+//   const newArry =[];
+//   for(let i =0;i<this.length;i++){
 
-    const value = this[i];
-    const targert = callback(value,i,this)
-    targert &&newArry.push(value);
+//     const value = this[i];
+//     const targert = callback(value,i,this)
+//     targert &&newArry.push(value);
 
-  }
-  return newArry;
-}
+//   }
+//   return newArry;
+// }
 
-console.log(arr.myFilter((d)=>d>2));
+// console.log(arr.myFilter((d)=>d>2));
+
+
+
+//reduce map it is use to return a single value from array
+
+const  sumarr = [1,2,3,4,5,6,7,8];
+
+// //arr.reduce(functoion (callbackfn,intitial value){
+//  return acc+next
+// },initial     value)

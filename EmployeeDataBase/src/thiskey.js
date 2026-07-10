@@ -1,20 +1,9 @@
-// this keyword in js
-// "use strict"
-// console.log(this)
+import fs from 'fs'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-let obj1 ={
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-    name:'aaditya',
-    age:'24',
-    display: function(){
-
-        let obj2={
-        name:'newobj',
-        age:'22',
-        print:()=>{ console.log(this)}
-        }
- obj2.print()
-    }
-   
-}
-obj1.display()
+const filepath = path.join(__dirname, 'obj.js')
+console.log(filepath)
